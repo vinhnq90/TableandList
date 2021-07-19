@@ -1,41 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai 1</title>
-    <Style>
-    
-    </Style>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            border: 1px solid #f1f1f1;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        .tr_bottom {
+            height: 50px;
+            border-bottom: 5px solid teal;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+            border-right: 1px solid green;
+            border-left: 1px solid green;
+            border-bottom: 1px solid slategray;
+        }
+
+        .th_left {
+            background-color: green;
+            color: white;
+            border-bottom: 1px solid slategray;
+            border-top-left-radius: 10px;
+            border-left: 1px solid white;
+        }
+
+        .th_right {
+            background-color: green;
+            color: white;
+            border-bottom: 1px solid slategray;
+            border-top-right-radius: 10px;
+            border-right: 1px solid white;
+        }
+
+        td {
+            border-bottom: 1px solid slategray;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            border-top-right-radius: 10px;
+        }
+
+        .td_left {
+            border-bottom: 1px solid slategray;
+            border-left: 1px solid slategray;
+            border-right: 1px solid white;
+            border-top-right-radius: 10px;
+        }
+
+        .td_right {
+            border-bottom: 1px solid slategray;
+            border-right: 1px solid slategray;
+            border-left: 1px solid white;
+            border-top-right-radius: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <table border = "1 style ="width: 100%";>
-        <tr style="background-color: green";
-        <p><font color="blue"</p>
-          <th>Rank</th>
-          <th>Name</th>
-          <th>Points</th>
-          <th>Team</th>
+    <table border="1">
+        <tr>
+            <th class="th_left">Rank</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th class="th_right">Team</th>
         </tr>
         <tr>
-          <td>1</td>
-          <td>Domenic</td>
-          <td>887,110</td>
-          <td>dcode</td>
+            <td class="td_left">1</td>
+            <td>Domenic</td>
+            <td>887,110</td>
+            <td class="td_right">dcode</td>
         </tr>
         <tr>
-           <td>1</td>
-           <td>Sally</td>
-           <td>72,400</td>
-           <td>Student</td>
+            <td class="td_left">2</td>
+            <td>Sally</td>
+            <td>72,400</td>
+            <td class="td_right">Student</td>
         </tr>
-        <tr>
-           <td>3</td>
-           <td>Nick</td>
-           <td>52,300</td>
-           <td>dcode</td>
+        <tr class="tr_bottom">
+            <td class="td_left">3</td>
+            <td>Nick</td>
+            <td>52,300</td>
+            <td class="td_right">dcode</td>
         </tr>
     </table>
 </body>
+
 </html>
